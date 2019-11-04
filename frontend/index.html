@@ -3,17 +3,32 @@
 <head>
     <title>Holiday Shopping List</title>
 	<meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-    <h1>Choose your Holiday</h1>
-    <form>
-        <select name="holidays">
-            <option value="christmas">Christmas</option>
-            <option value="hanukkah">Hanukkah</option>
-            <option value="kwanzaa">Kwanzaa</option>
+    
+    <div id="choice_box">
+        <h1>Choose your Holiday</h1>
+        <form>
+            <select id="holidays" name="holidays">
+                <option value="Christmas">Christmas</option>
+                <option value="Hanukkah">Hanukkah</option>
+                <option value="Kwanzaa">Kwanzaa</option>
 
-        </select>
-    </form>
+            </select>
+        </form>
+    </div>
+    
+
+    <canvas id="canvas">
+
+        <div id="main">
+            <button id="new_giftee">Add a New Name to your List</button>
+
+        </div>
+
+    </canvas>
+    
     
     <script src="index.js"></script>
 </body>
