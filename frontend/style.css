@@ -1,2 +1,75 @@
-﻿body {
+﻿body{margin:0;height:100%;}
+canvas{
+
+    position:fixed;
+    top:200;left:0
+    background-image: linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
+    background-image: -o-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
+    background-image: -moz-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
+    background-image: -webkit-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
+    background-image: -ms-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
+    
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(105,173,212)),
+        color-stop(0.84, rgb(23,82,145))
+    );
+}
+
+#choice_box{
+
+    
+    overflow: hidden;
+    
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    z-index = 0;
+
+}
+
+#main{
+
+
+    display:none;
+    position:absolute;
+    top: 35%;
+    left: 25%;
+    width: 50%;
+    text-align: center;
+    padding: 80px 10px 80px 10px;
+    border: 5px solid black;
+    background: white;
+}
+
+.Christmas{
+
+   background: darkgreen;
+   background-color: darkgreen;
+   color: red;
+    
+}
+
+.Hanukkah{
+
+   background: blue;
+   background-color: blue;
+   color: white;
+    
+}
+
+.Kwanzaa{
+   
+   background: beige;
+   background-color: beige;
+   color: darkolivegreen;
+
 }
