@@ -22,6 +22,24 @@ function updateChoice(holidayString)
 
 }
 
+//Add and Remove
+
+function addItem() {
+    let ul = document.getElementById("giftee-list");
+    let f_name = document.getElementById("f_name");
+    let li = document.createElement("li");
+    li.setAttribute('id', f_name.value);
+    li.appendChild(document.createTextNode(f_name.value));
+    ul.appendChild(li);
+}
+
+function removeItem() {
+    var ul = document.getElementById("giftee-list");
+    var f_name = document.getElementById("f_name");
+    var item = document.getElementById(f_name.value);
+    ul.removeChild(item);
+}
+
 //Visual Effects
 
 (function () {

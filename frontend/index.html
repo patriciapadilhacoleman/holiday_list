@@ -10,18 +10,21 @@
     <div id="choice_box">
         <h1>Choose your Holiday</h1>
         <form>
-            <select id="holidays" name="holidays">
-                <option value="Christmas">Christmas</option>
-                <option value="Hanukkah">Hanukkah</option>
-                <option value="Kwanzaa">Kwanzaa</option>
-
-            </select>
+        <select id="holidays" name="holidays">
+            <option value="Christmas">Christmas</option>
+            <option value="Hanukkah">Hanukkah</option>
+            <option value="Kwanzaa">Kwanzaa</option>
+        </select>
         </form>
     </div>
     
 
    <div id="main">
-            <button id="new_giftee">Add a New Name to your List</button>
+
+       <ul id="giftee-list"></ul>
+       <input type="text" id="f_name" />
+       <button onclick="addItem()">Add</button>
+       <button onclick="removeItem()">Remove</button>
 
      </div>
 
