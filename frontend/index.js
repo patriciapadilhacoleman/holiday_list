@@ -1,42 +1,25 @@
-﻿function handleClick(e) {
-    const holidayString = document.getElementById('holidays').value
-    displayMessage(greet(holidayString))
-}
-
+﻿
 const holidayChoice = document.getElementById('holidays');
 
 holidayChoice.addEventListener('click', function (event) {
-    const holidayString = document.getElementById('holidays').value
-    displayMessage(choose(holidayString))
+    const holidayString = document.getElementById('holidays').value;
+    updateChoice(holidayString);
 });
 
-function displayMessage(msg) {
-    document.getElementById("choice_box").querySelector("h1").innerText = msg;
-}
 
-function choose(holidayStr) {
-    
-    // process the css changes depending on the holiday
-    switch(holidayStr)
-    {
-        case "christmas":
-            initializeChristmas();
-            break;
-        case "hanukkah":
-            break;
-        case "kwanzaa":
-            break;
-        default:
-            break;
-    }
+function updateChoice(holidayString)
+{
+    //Change the Main Menu according to the holiday
+    const menu = document.getElementById("choice_box");
+    const heading = menu.querySelector("h1");
+    heading.innerText = holidayString;
+    heading.className = holidayString;
+    menu.className = holidayString;
+    let main = document.getElementById("main");
+    main.style.display = "block";
+    main.querySelector("button").className = holidayString;
+   
 
-    return holidayStr + " List";
-}
-
-function initializeChristmas() {
-    var canvas = document.getElementById("canvas");
-    canvas.style.display = "block";
-    init();
 }
 
 //Visual Effects
@@ -158,3 +141,4 @@ window.addEventListener("resize", function () {
     canvas.height = window.innerHeight;
 })
 
+init();

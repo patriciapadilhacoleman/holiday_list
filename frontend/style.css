@@ -1,9 +1,8 @@
 ﻿body{margin:0;height:100%;}
 canvas{
 
-    display:none;
-    position:absolute;
-    top:0;left:0
+    position:fixed;
+    top:200;left:0
     background-image: linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
     background-image: -o-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
     background-image: -moz-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
@@ -21,25 +20,56 @@ canvas{
 
 #choice_box{
 
-    background: black;
+    
     overflow: hidden;
-    background-color: #333;
+    
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    z-index = 0;
 
 }
 
 #main{
 
+
+    display:none;
+    position:absolute;
+    top: 35%;
+    left: 25%;
+    width: 50%;
     text-align: center;
     padding: 80px 10px 80px 10px;
-    border: 1px solid #A02422;
-    background: black;
+    border: 5px solid black;
+    background: white;
+}
+
+.Christmas{
+
+   background: darkgreen;
+   background-color: darkgreen;
+   color: red;
+    
+}
+
+.Hanukkah{
+
+   background: blue;
+   background-color: blue;
+   color: white;
+    
+}
+
+.Kwanzaa{
+   
+   background: beige;
+   background-color: beige;
+   color: darkolivegreen;
+
 }
